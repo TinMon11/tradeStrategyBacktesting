@@ -310,8 +310,6 @@ class TradeSimulator {
         const avgLoss = losingTrades.length > 0 ? 
             Math.abs(losingTrades.reduce((sum, t) => sum + t.resultUSD, 0) / losingTrades.length) : 0;
         
-        const profitFactor = avgLoss > 0 ? avgWin / avgLoss : 0;
-
         return {
             totalTrades: this.trades.length,
             winningTrades: winningTrades.length,
@@ -323,7 +321,6 @@ class TradeSimulator {
             totalReturnPercent: MathUtils.round(totalReturnPercent, 2),
             avgWin: MathUtils.round(avgWin, 2),
             avgLoss: MathUtils.round(avgLoss, 2),
-            profitFactor: MathUtils.round(profitFactor, 2)
         };
     }
 

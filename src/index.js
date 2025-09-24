@@ -132,11 +132,9 @@ class BacktestingApp {
             this.showBasicStats(candles);
 
             // Run backtesting with strategy
-            console.log('\n🎯 Running breakout strategy...');
             const backtestResults = await this.backtestEngine.runBacktest(candles, this.config.symbol, this.config, this.config.saveResults);
 
             console.log('\n🎯 Backtesting completed successfully!');
-            console.log('📋 Next steps: Implement trade simulation');
 
         } catch (error) {
             console.error('❌ Application error:', error.message);

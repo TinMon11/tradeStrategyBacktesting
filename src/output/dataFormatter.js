@@ -83,7 +83,6 @@ class DataFormatter {
             finalBalance: tradingStats.finalBalance,
             avgWin: tradingStats.avgWin,
             avgLoss: tradingStats.avgLoss,
-            profitFactor: tradingStats.profitFactor,
             maxDrawdown: this.calculateMaxDrawdown(tradingStats),
             maxDrawdownPercent: this.calculateMaxDrawdownPercent(tradingStats)
         };

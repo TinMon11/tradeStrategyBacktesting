@@ -185,7 +185,6 @@ class BacktestEngine {
         console.log(`   💵 Capital: $${tradingStats.initialCapital} → $${tradingStats.finalBalance}`);
         console.log(`   📈 Total profit: $${tradingStats.totalReturn} (${tradingStats.totalReturnPercent}%)`);
         console.log(`   📊 Avg win: $${tradingStats.avgWin} | Avg loss: $${tradingStats.avgLoss}`);
-        console.log(`   ⚖️  Profit factor: ${tradingStats.profitFactor}`);
     }
 }
 

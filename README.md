@@ -180,7 +180,6 @@ Example: `BTCUSDT_2025-08-24_to_2025-09-23.json`
     "winRate": 24,
     "totalReturn": -12.62,
     "finalBalance": 87.38,
-    "profitFactor": 1.2
   }
 }
 ```
